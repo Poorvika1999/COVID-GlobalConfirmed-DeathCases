@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_123dd90a4795443eac144d17f664671d {
+                    position: relative;
+                    width: 80.0%;
+                    height: 500.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_123dd90a4795443eac144d17f664671d" ></div>
+        
+</body>
+<script>    
+    
+            var map_123dd90a4795443eac144d17f664671d = L.map(
+                "map_123dd90a4795443eac144d17f664671d",
+                {
+                    center: [23.0, 80.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4cedb4e40f6f4440b0bbee6a52da6948 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 6, "maxZoom": 6, "minZoom": 4, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_123dd90a4795443eac144d17f664671d);
+        
+    
+            var circle_1d77d2e723844b38bddf8344af8a45c4 = L.circle(
+                [19.7515, 75.7139],
+                {"bubblingMouseEvents": true, "color": "#ff6600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff8533", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 240000, "stroke": true, "weight": 3}
+            ).addTo(map_123dd90a4795443eac144d17f664671d);
+        
+    
+            circle_1d77d2e723844b38bddf8344af8a45c4.bindTooltip(
+                `<div>
+                     <h5 style='text-align:center;font-weight: bold'>Maharashtra</h5><hr style='margin:10px;'><ul style='color: #444;list-style-type:circle;align-item:left;padding-left:20px;padding-right:20px'><li>Confirmed: 107958</li><li>Active:   53017</li><li>Recovered:   50978</li><li>Deaths:   3950</li><li>Mortality Rate:   3.66</li></ul>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_4abe9425fe594c1b990d0e1d9196b704 = L.circle(
+                [11.1271, 78.6569],
+                {"bubblingMouseEvents": true, "color": "#ff6600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff8533", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 225000, "stroke": true, "weight": 3}
+            ).addTo(map_123dd90a4795443eac144d17f664671d);
+        
+    
+            circle_4abe9425fe594c1b990d0e1d9196b704.bindTooltip(
+                `<div>
+                     <h5 style='text-align:center;font-weight: bold'>Tamil Nadu</h5><hr style='margin:10px;'><ul style='color: #444;list-style-type:circle;align-item:left;padding-left:20px;padding-right:20px'><li>Confirmed: 44661</li><li>Active:   19679</li><li>Recovered:   24547</li><li>Deaths:   435</li><li>Mortality Rate:   0.97</li></ul>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a3aa5f08497449aeaa7d8363c2d9d4c1 = L.circle(
+                [28.7041, 77.1025],
+                {"bubblingMouseEvents": true, "color": "#ff6600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff8533", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 225000, "stroke": true, "weight": 3}
+            ).addTo(map_123dd90a4795443eac144d17f664671d);
+        
+    
+            circle_a3aa5f08497449aeaa7d8363c2d9d4c1.bindTooltip(
+                `<div>
+                     <h5 style='text-align:center;font-weight: bold'>Delhi</h5><hr style='margin:10px;'><ul style='color: #444;list-style-type:circle;align-item:left;padding-left:20px;padding-right:20px'><li>Confirmed: 41182</li><li>Active:   24032</li><li>Recovered:   15823</li><li>Deaths:   1327</li><li>Mortality Rate:   3.22</li></ul>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_278ab48896734c309fdf00c6720bfa63 = L.circle(
+                [22.2587, 71.1924],
+                {"bubblingMouseEvents": true, "color": "#ff6600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff8533", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 210000, "stroke": true, "weight": 3}
+            ).addTo(map_123dd90a4795443eac144d17f664671d);
+        
+    
+            circle_278ab48896734c309fdf00c6720bfa63.bindTooltip(
+                `<div>
+                     <h5 style='text-align:center;font-weight: bold'>Gujarat</h5><hr style='margin:10px;'><ul style='color: #444;list-style-type:circle;align-item:left;padding-left:20px;padding-right:20px'><li>Confirmed: 23590</li><li>Active:   5779</li><li>Recovered:   16333</li><li>Deaths:   1478</li><li>Mortality Rate:   6.27</li></ul>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c415fe52a806492f93ade7ffd10fa756 = L.circle(
+                [26.8467, 80.9462],
+                {"bubblingMouseEvents": true, "color": "#ff6600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff8533", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 195000, "stroke": true, "weight": 3}
+            ).addTo(map_123dd90a4795443eac144d17f664671d);
+        
+    
+            circle_c415fe52a806492f93ade7ffd10fa756.bindTooltip(
+                `<div>
+                     <h5 style='text-align:center;font-weight: bold'>Uttar Pradesh</h5><hr style='margin:10px;'><ul style='color: #444;list-style-type:circle;align-item:left;padding-left:20px;padding-right:20px'><li>Confirmed: 13615</li><li>Active:   4948</li><li>Recovered:   8268</li><li>Deaths:   399</li><li>Mortality Rate:   2.93</li></ul>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_08922a17c57c4af1acd4ff370d67582e = L.circle(
+                [27.0238, 74.2179],
+                {"bubblingMouseEvents": true, "color": "#ff6600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff8533", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 195000, "stroke": true, "weight": 3}
+            ).addTo(map_123dd90a4795443eac144d17f664671d);
+        
+    
+            circle_08922a17c57c4af1acd4ff370d67582e.bindTooltip(
+                `<div>
+                     <h5 style='text-align:center;font-weight: bold'>Rajasthan</h5><hr style='margin:10px;'><ul style='color: #444;list-style-type:circle;align-item:left;padding-left:20px;padding-right:20px'><li>Confirmed: 12772</li><li>Active:   2847</li><li>Recovered:   9631</li><li>Deaths:   294</li><li>Mortality Rate:   2.3</li></ul>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1eb82b268868489ea0b2419d0cdefcda = L.circle(
+                [22.9734, 78.6569],
+                {"bubblingMouseEvents": true, "color": "#ff6600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff8533", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 195000, "stroke": true, "weight": 3}
+            ).addTo(map_123dd90a4795443eac144d17f664671d);
+        
+    
+            circle_1eb82b268868489ea0b2419d0cdefcda.bindTooltip(
+                `<div>
+                     <h5 style='text-align:center;font-weight: bold'>Madhya Pradesh</h5><hr style='margin:10px;'><ul style='color: #444;list-style-type:circle;align-item:left;padding-left:20px;padding-right:20px'><li>Confirmed: 10802</li><li>Active:   2666</li><li>Recovered:   7677</li><li>Deaths:   459</li><li>Mortality Rate:   4.25</li></ul>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_2de5549e4f64403d98ce0aa04a62dadd = L.circle(
+                [22.9868, 87.855],
+                {"bubblingMouseEvents": true, "color": "#ff6600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff8533", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 195000, "stroke": true, "weight": 3}
+            ).addTo(map_123dd90a4795443eac144d17f664671d);
+        
+    
+            circle_2de5549e4f64403d98ce0aa04a62dadd.bindTooltip(
+                `<div>
+                     <h5 style='text-align:center;font-weight: bold'>West Bengal</h5><hr style='margin:10px;'><ul style='color: #444;list-style-type:circle;align-item:left;padding-left:20px;padding-right:20px'><li>Confirmed: 11087</li><li>Active:   5552</li><li>Recovered:   5060</li><li>Deaths:   475</li><li>Mortality Rate:   4.28</li></ul>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1b8571b128b545f398822e34f0b006d4 = L.circle(
+                [15.3173, 75.7139],
+                {"bubblingMouseEvents": true, "color": "#ff6600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff8533", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 180000, "stroke": true, "weight": 3}
+            ).addTo(map_123dd90a4795443eac144d17f664671d);
+        
+    
+            circle_1b8571b128b545f398822e34f0b006d4.bindTooltip(
+                `<div>
+                     <h5 style='text-align:center;font-weight: bold'>Karnataka</h5><hr style='margin:10px;'><ul style='color: #444;list-style-type:circle;align-item:left;padding-left:20px;padding-right:20px'><li>Confirmed: 7000</li><li>Active:   2950</li><li>Recovered:   3960</li><li>Deaths:   87</li><li>Mortality Rate:   1.24</li></ul>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b83b53d065264ecface5a53bab1c61d5 = L.circle(
+                [29.0588, 76.0856],
+                {"bubblingMouseEvents": true, "color": "#ff6600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff8533", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 180000, "stroke": true, "weight": 3}
+            ).addTo(map_123dd90a4795443eac144d17f664671d);
+        
+    
+            circle_b83b53d065264ecface5a53bab1c61d5.bindTooltip(
+                `<div>
+                     <h5 style='text-align:center;font-weight: bold'>Haryana</h5><hr style='margin:10px;'><ul style='color: #444;list-style-type:circle;align-item:left;padding-left:20px;padding-right:20px'><li>Confirmed: 7208</li><li>Active:   4117</li><li>Recovered:   3003</li><li>Deaths:   88</li><li>Mortality Rate:   1.22</li></ul>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_76bc1255d8fb41358479b96129cb52ea = L.circle(
+                [25.0961, 85.3131],
+                {"bubblingMouseEvents": true, "color": "#ff6600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff8533", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 180000, "stroke": true, "weight": 3}
+            ).addTo(map_123dd90a4795443eac144d17f664671d);
+        
+    
+            circle_76bc1255d8fb41358479b96129cb52ea.bindTooltip(
+                `<div>
+                     <h5 style='text-align:center;font-weight: bold'>Bihar</h5><hr style='margin:10px;'><ul style='color: #444;list-style-type:circle;align-item:left;padding-left:20px;padding-right:20px'><li>Confirmed: 6475</li><li>Active:   2464</li><li>Recovered:   3975</li><li>Deaths:   36</li><li>Mortality Rate:   0.56</li></ul>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_608bdf5f843345048a266fd263b81a15 = L.circle(
+                [15.9129, 79.74],
+                {"bubblingMouseEvents": true, "color": "#ff6600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff8533", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 180000, "stroke": true, "weight": 3}
+            ).addTo(map_123dd90a4795443eac144d17f664671d);
+        
+    
+            circle_608bdf5f843345048a266fd263b81a15.bindTooltip(
+                `<div>
+                     <h5 style='text-align:center;font-weight: bold'>Andhra Pradesh</h5><hr style='margin:10px;'><ul style='color: #444;list-style-type:circle;align-item:left;padding-left:20px;padding-right:20px'><li>Confirmed: 6152</li><li>Active:   2752</li><li>Recovered:   3316</li><li>Deaths:   84</li><li>Mortality Rate:   1.37</li></ul>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_73985d498ba0479597f980fbbb815e0c = L.circle(
+                [33.7782, 76.5762],
+                {"bubblingMouseEvents": true, "color": "#ff6600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff8533", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 180000, "stroke": true, "weight": 3}
+            ).addTo(map_123dd90a4795443eac144d17f664671d);
+        
+    
+            circle_73985d498ba0479597f980fbbb815e0c.bindTooltip(
+                `<div>
+                     <h5 style='text-align:center;font-weight: bold'>Jammu and Kashmir</h5><hr style='margin:10px;'><ul style='color: #444;list-style-type:circle;align-item:left;padding-left:20px;padding-right:20px'><li>Confirmed: 5041</li><li>Active:   2593</li><li>Recovered:   2389</li><li>Deaths:   59</li><li>Mortality Rate:   1.17</li></ul>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_323a573a758941dbad928c64fdcdd0fa = L.circle(
+                [18.1124, 79.0193],
+                {"bubblingMouseEvents": true, "color": "#ff6600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff8533", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 180000, "stroke": true, "weight": 3}
+            ).addTo(map_123dd90a4795443eac144d17f664671d);
+        
+    
+            circle_323a573a758941dbad928c64fdcdd0fa.bindTooltip(
+                `<div>
+                     <h5 style='text-align:center;font-weight: bold'>Telangana</h5><hr style='margin:10px;'><ul style='color: #444;list-style-type:circle;align-item:left;padding-left:20px;padding-right:20px'><li>Confirmed: 4974</li><li>Active:   2412</li><li>Recovered:   2377</li><li>Deaths:   185</li><li>Mortality Rate:   3.72</li></ul>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f305a8a3bb704c759a55e3cdc1d810e5 = L.circle(
+                [20.9517, 85.0985],
+                {"bubblingMouseEvents": true, "color": "#ff6600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff8533", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 165000, "stroke": true, "weight": 3}
+            ).addTo(map_123dd90a4795443eac144d17f664671d);
+        
+    
+            circle_f305a8a3bb704c759a55e3cdc1d810e5.bindTooltip(
+                `<div>
+                     <h5 style='text-align:center;font-weight: bold'>Odisha</h5><hr style='margin:10px;'><ul style='color: #444;list-style-type:circle;align-item:left;padding-left:20px;padding-right:20px'><li>Confirmed: 4055</li><li>Active:   1333</li><li>Recovered:   2708</li><li>Deaths:   14</li><li>Mortality Rate:   0.35</li></ul>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_689c162e50644dd1b2294d8d4db7d40b = L.circle(
+                [26.2006, 92.9376],
+                {"bubblingMouseEvents": true, "color": "#ff6600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff8533", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 180000, "stroke": true, "weight": 3}
+            ).addTo(map_123dd90a4795443eac144d17f664671d);
+        
+    
+            circle_689c162e50644dd1b2294d8d4db7d40b.bindTooltip(
+                `<div>
+                     <h5 style='text-align:center;font-weight: bold'>Assam</h5><hr style='margin:10px;'><ul style='color: #444;list-style-type:circle;align-item:left;padding-left:20px;padding-right:20px'><li>Confirmed: 4159</li><li>Active:   2187</li><li>Recovered:   1961</li><li>Deaths:   8</li><li>Mortality Rate:   0.19</li></ul>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f4756d83bf5c4e369d9e0fd314b84fde = L.circle(
+                [31.1471, 75.3412],
+                {"bubblingMouseEvents": true, "color": "#ff6600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff8533", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 165000, "stroke": true, "weight": 3}
+            ).addTo(map_123dd90a4795443eac144d17f664671d);
+        
+    
+            circle_f4756d83bf5c4e369d9e0fd314b84fde.bindTooltip(
+                `<div>
+                     <h5 style='text-align:center;font-weight: bold'>Punjab</h5><hr style='margin:10px;'><ul style='color: #444;list-style-type:circle;align-item:left;padding-left:20px;padding-right:20px'><li>Confirmed: 3140</li><li>Active:   717</li><li>Recovered:   2356</li><li>Deaths:   67</li><li>Mortality Rate:   2.13</li></ul>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e63d9a5a87144ca99a1c14f0218e7fdb = L.circle(
+                [10.8505, 76.2711],
+                {"bubblingMouseEvents": true, "color": "#ff6600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff8533", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 165000, "stroke": true, "weight": 3}
+            ).addTo(map_123dd90a4795443eac144d17f664671d);
+        
+    
+            circle_e63d9a5a87144ca99a1c14f0218e7fdb.bindTooltip(
+                `<div>
+                     <h5 style='text-align:center;font-weight: bold'>Kerala</h5><hr style='margin:10px;'><ul style='color: #444;list-style-type:circle;align-item:left;padding-left:20px;padding-right:20px'><li>Confirmed: 2462</li><li>Active:   1340</li><li>Recovered:   1101</li><li>Deaths:   20</li><li>Mortality Rate:   0.81</li></ul>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_09ad3e6db5c1442db1a4232f52e85505 = L.circle(
+                [30.0668, 79.0193],
+                {"bubblingMouseEvents": true, "color": "#ff6600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff8533", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 150000, "stroke": true, "weight": 3}
+            ).addTo(map_123dd90a4795443eac144d17f664671d);
+        
+    
+            circle_09ad3e6db5c1442db1a4232f52e85505.bindTooltip(
+                `<div>
+                     <h5 style='text-align:center;font-weight: bold'>Uttarakhand</h5><hr style='margin:10px;'><ul style='color: #444;list-style-type:circle;align-item:left;padding-left:20px;padding-right:20px'><li>Confirmed: 1819</li><li>Active:   675</li><li>Recovered:   1111</li><li>Deaths:   24</li><li>Mortality Rate:   1.32</li></ul>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ee5ef38a4b404bbeb7b20544adedeef9 = L.circle(
+                [23.6102, 85.2799],
+                {"bubblingMouseEvents": true, "color": "#ff6600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff8533", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 150000, "stroke": true, "weight": 3}
+            ).addTo(map_123dd90a4795443eac144d17f664671d);
+        
+    
+            circle_ee5ef38a4b404bbeb7b20544adedeef9.bindTooltip(
+                `<div>
+                     <h5 style='text-align:center;font-weight: bold'>Jharkhand</h5><hr style='margin:10px;'><ul style='color: #444;list-style-type:circle;align-item:left;padding-left:20px;padding-right:20px'><li>Confirmed: 1748</li><li>Active:   835</li><li>Recovered:   905</li><li>Deaths:   8</li><li>Mortality Rate:   0.46</li></ul>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1ad0a4bf606d4d2f8ba34f23cc2140fb = L.circle(
+                [21.2787, 81.8661],
+                {"bubblingMouseEvents": true, "color": "#ff6600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff8533", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 150000, "stroke": true, "weight": 3}
+            ).addTo(map_123dd90a4795443eac144d17f664671d);
+        
+    
+            circle_1ad0a4bf606d4d2f8ba34f23cc2140fb.bindTooltip(
+                `<div>
+                     <h5 style='text-align:center;font-weight: bold'>Chhattisgarh</h5><hr style='margin:10px;'><ul style='color: #444;list-style-type:circle;align-item:left;padding-left:20px;padding-right:20px'><li>Confirmed: 1662</li><li>Active:   939</li><li>Recovered:   717</li><li>Deaths:   6</li><li>Mortality Rate:   0.36</li></ul>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_002cb6d71e57492d9156210fffeb29b0 = L.circle(
+                [23.9408, 91.9882],
+                {"bubblingMouseEvents": true, "color": "#ff6600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff8533", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 150000, "stroke": true, "weight": 3}
+            ).addTo(map_123dd90a4795443eac144d17f664671d);
+        
+    
+            circle_002cb6d71e57492d9156210fffeb29b0.bindTooltip(
+                `<div>
+                     <h5 style='text-align:center;font-weight: bold'>Tripura</h5><hr style='margin:10px;'><ul style='color: #444;list-style-type:circle;align-item:left;padding-left:20px;padding-right:20px'><li>Confirmed: 1079</li><li>Active:   645</li><li>Recovered:   433</li><li>Deaths:   1</li><li>Mortality Rate:   0.09</li></ul>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_713fd61b7237466cacdc1fe8b6b44fe8 = L.circle(
+                [31.1048, 77.1734],
+                {"bubblingMouseEvents": true, "color": "#ff6600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff8533", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 135000, "stroke": true, "weight": 3}
+            ).addTo(map_123dd90a4795443eac144d17f664671d);
+        
+    
+            circle_713fd61b7237466cacdc1fe8b6b44fe8.bindTooltip(
+                `<div>
+                     <h5 style='text-align:center;font-weight: bold'>Himachal Pradesh</h5><hr style='margin:10px;'><ul style='color: #444;list-style-type:circle;align-item:left;padding-left:20px;padding-right:20px'><li>Confirmed: 518</li><li>Active:   174</li><li>Recovered:   326</li><li>Deaths:   7</li><li>Mortality Rate:   1.35</li></ul>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_77fb10bf9bc543078bc97fbb7531f733 = L.circle(
+                [15.2993, 74.124],
+                {"bubblingMouseEvents": true, "color": "#ff6600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff8533", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 135000, "stroke": true, "weight": 3}
+            ).addTo(map_123dd90a4795443eac144d17f664671d);
+        
+    
+            circle_77fb10bf9bc543078bc97fbb7531f733.bindTooltip(
+                `<div>
+                     <h5 style='text-align:center;font-weight: bold'>Goa</h5><hr style='margin:10px;'><ul style='color: #444;list-style-type:circle;align-item:left;padding-left:20px;padding-right:20px'><li>Confirmed: 564</li><li>Active:   490</li><li>Recovered:   74</li><li>Deaths:   0</li><li>Mortality Rate:   0.0</li></ul>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ca370b9fb4bc44a8bed5633130d27413 = L.circle(
+                [24.6637, 93.9063],
+                {"bubblingMouseEvents": true, "color": "#ff6600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff8533", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 120000, "stroke": true, "weight": 3}
+            ).addTo(map_123dd90a4795443eac144d17f664671d);
+        
+    
+            circle_ca370b9fb4bc44a8bed5633130d27413.bindTooltip(
+                `<div>
+                     <h5 style='text-align:center;font-weight: bold'>Manipur</h5><hr style='margin:10px;'><ul style='color: #444;list-style-type:circle;align-item:left;padding-left:20px;padding-right:20px'><li>Confirmed: 458</li><li>Active:   367</li><li>Recovered:   91</li><li>Deaths:   0</li><li>Mortality Rate:   0.0</li></ul>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b116447029de4b10b41d19d86d37f602 = L.circle(
+                [30.7333, 76.7794],
+                {"bubblingMouseEvents": true, "color": "#ff6600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff8533", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 120000, "stroke": true, "weight": 3}
+            ).addTo(map_123dd90a4795443eac144d17f664671d);
+        
+    
+            circle_b116447029de4b10b41d19d86d37f602.bindTooltip(
+                `<div>
+                     <h5 style='text-align:center;font-weight: bold'>Chandigarh</h5><hr style='margin:10px;'><ul style='color: #444;list-style-type:circle;align-item:left;padding-left:20px;padding-right:20px'><li>Confirmed: 353</li><li>Active:   52</li><li>Recovered:   295</li><li>Deaths:   6</li><li>Mortality Rate:   1.7</li></ul>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_91f5538b52664913888b16758126012f = L.circle(
+                [11.9416, 79.8083],
+                {"bubblingMouseEvents": true, "color": "#ff6600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff8533", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 105000, "stroke": true, "weight": 3}
+            ).addTo(map_123dd90a4795443eac144d17f664671d);
+        
+    
+            circle_91f5538b52664913888b16758126012f.bindTooltip(
+                `<div>
+                     <h5 style='text-align:center;font-weight: bold'>Puducherry</h5><hr style='margin:10px;'><ul style='color: #444;list-style-type:circle;align-item:left;padding-left:20px;padding-right:20px'><li>Confirmed: 194</li><li>Active:   99</li><li>Recovered:   91</li><li>Deaths:   4</li><li>Mortality Rate:   2.06</li></ul>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_5755e8cf242a40c4a687dc18e1db23fd = L.circle(
+                [34.1526, 77.577],
+                {"bubblingMouseEvents": true, "color": "#ff6600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff8533", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 135000, "stroke": true, "weight": 3}
+            ).addTo(map_123dd90a4795443eac144d17f664671d);
+        
+    
+            circle_5755e8cf242a40c4a687dc18e1db23fd.bindTooltip(
+                `<div>
+                     <h5 style='text-align:center;font-weight: bold'>Ladakh</h5><hr style='margin:10px;'><ul style='color: #444;list-style-type:circle;align-item:left;padding-left:20px;padding-right:20px'><li>Confirmed: 549</li><li>Active:   468</li><li>Recovered:   80</li><li>Deaths:   1</li><li>Mortality Rate:   0.18</li></ul>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_2f45f697e3164cdba44cf6b81e1782f7 = L.circle(
+                [26.1584, 94.5624],
+                {"bubblingMouseEvents": true, "color": "#ff6600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff8533", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 105000, "stroke": true, "weight": 3}
+            ).addTo(map_123dd90a4795443eac144d17f664671d);
+        
+    
+            circle_2f45f697e3164cdba44cf6b81e1782f7.bindTooltip(
+                `<div>
+                     <h5 style='text-align:center;font-weight: bold'>Nagaland</h5><hr style='margin:10px;'><ul style='color: #444;list-style-type:circle;align-item:left;padding-left:20px;padding-right:20px'><li>Confirmed: 177</li><li>Active:   89</li><li>Recovered:   88</li><li>Deaths:   0</li><li>Mortality Rate:   0.0</li></ul>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_dc3976aa5aaf42bd948e23e7d6558f27 = L.circle(
+                [23.1645, 92.9376],
+                {"bubblingMouseEvents": true, "color": "#ff6600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff8533", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 90000, "stroke": true, "weight": 3}
+            ).addTo(map_123dd90a4795443eac144d17f664671d);
+        
+    
+            circle_dc3976aa5aaf42bd948e23e7d6558f27.bindTooltip(
+                `<div>
+                     <h5 style='text-align:center;font-weight: bold'>Mizoram</h5><hr style='margin:10px;'><ul style='color: #444;list-style-type:circle;align-item:left;padding-left:20px;padding-right:20px'><li>Confirmed: 117</li><li>Active:   116</li><li>Recovered:   1</li><li>Deaths:   0</li><li>Mortality Rate:   0.0</li></ul>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f14a42c0120449da9d60fa8f465e2f08 = L.circle(
+                [28.218, 94.7278],
+                {"bubblingMouseEvents": true, "color": "#ff6600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff8533", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 90000, "stroke": true, "weight": 3}
+            ).addTo(map_123dd90a4795443eac144d17f664671d);
+        
+    
+            circle_f14a42c0120449da9d60fa8f465e2f08.bindTooltip(
+                `<div>
+                     <h5 style='text-align:center;font-weight: bold'>Arunachal Pradesh</h5><hr style='margin:10px;'><ul style='color: #444;list-style-type:circle;align-item:left;padding-left:20px;padding-right:20px'><li>Confirmed: 91</li><li>Active:   84</li><li>Recovered:   7</li><li>Deaths:   0</li><li>Mortality Rate:   0.0</li></ul>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9de5587a6913445dbef0fedc4380c538 = L.circle(
+                [25.467, 91.3662],
+                {"bubblingMouseEvents": true, "color": "#ff6600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff8533", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75000, "stroke": true, "weight": 3}
+            ).addTo(map_123dd90a4795443eac144d17f664671d);
+        
+    
+            circle_9de5587a6913445dbef0fedc4380c538.bindTooltip(
+                `<div>
+                     <h5 style='text-align:center;font-weight: bold'>Meghalaya</h5><hr style='margin:10px;'><ul style='color: #444;list-style-type:circle;align-item:left;padding-left:20px;padding-right:20px'><li>Confirmed: 44</li><li>Active:   17</li><li>Recovered:   26</li><li>Deaths:   1</li><li>Mortality Rate:   2.27</li></ul>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b46a6869aea44668bc18eef32c21c280 = L.circle(
+                [11.7401, 92.6586],
+                {"bubblingMouseEvents": true, "color": "#ff6600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff8533", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75000, "stroke": true, "weight": 3}
+            ).addTo(map_123dd90a4795443eac144d17f664671d);
+        
+    
+            circle_b46a6869aea44668bc18eef32c21c280.bindTooltip(
+                `<div>
+                     <h5 style='text-align:center;font-weight: bold'>Andaman and Nicobar Islands</h5><hr style='margin:10px;'><ul style='color: #444;list-style-type:circle;align-item:left;padding-left:20px;padding-right:20px'><li>Confirmed: 41</li><li>Active:   8</li><li>Recovered:   33</li><li>Deaths:   0</li><li>Mortality Rate:   0.0</li></ul>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_cff9b73f1c644c0f9e52d483fde061db = L.circle(
+                [27.533, 88.5122],
+                {"bubblingMouseEvents": true, "color": "#ff6600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff8533", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 90000, "stroke": true, "weight": 3}
+            ).addTo(map_123dd90a4795443eac144d17f664671d);
+        
+    
+            circle_cff9b73f1c644c0f9e52d483fde061db.bindTooltip(
+                `<div>
+                     <h5 style='text-align:center;font-weight: bold'>Sikkim</h5><hr style='margin:10px;'><ul style='color: #444;list-style-type:circle;align-item:left;padding-left:20px;padding-right:20px'><li>Confirmed: 68</li><li>Active:   63</li><li>Recovered:   5</li><li>Deaths:   0</li><li>Mortality Rate:   0.0</li></ul>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
